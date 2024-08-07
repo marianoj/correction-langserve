@@ -6,6 +6,8 @@ from langchain_openai import ChatOpenAI
 from langserve import add_routes
 from pirate_speak.chain import chain as pirate_speak_chain
 from fastapi.middleware.cors import CORSMiddleware
+# from anthropic_iterative_search import chain as anthropic_iterative_search_chain
+# from csv_agent.agent import agent_executor as csv_agent_chain
 
 app = FastAPI(
     title="LangChain Server",
@@ -41,6 +43,7 @@ add_routes(
     path="/joke",
 )
 
+# add_routes(app, csv_agent_chain, path="/csv-agent")
 if __name__ == "__main__":
     import uvicorn
 
