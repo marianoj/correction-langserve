@@ -13,10 +13,14 @@ python = "^3.11"
 uvicorn = "^0.23.2"
 langserve = {extras = ["server"], version = ">=0.0.30"}
 pydantic = "<2"
-pirate-speak = {path = "packages/pirate-speak", develop = true}
-robocorp-action-server = {path = "packages/robocorp-action-server", develop = true}
-anthropic-iterative-search = {path = "packages/anthropic-iterative-search", develop = true}
-csv-agent = {path = "packages/csv-agent", develop = true}
+neo4j-semantic-layer = {path = "packages/neo4j-semantic-layer", develop = true}
+openai-functions-agent = {path = "packages/openai-functions-agent", develop = true}
+research-assistant = {path = "packages/research-assistant", develop = true}
+rag-conversation = {path = "packages/rag-conversation", develop = true}
+rag-ollama-multi-query = {path = "packages/rag-ollama-multi-query", develop = true}
+summarize-anthropic = {path = "packages/summarize-anthropic", develop = true}
+summarize-anthropic-2 = {path = "packages/summarize-anthropic-2", develop = true}
+market-research = {path = "packages/market-research", develop = true}
 
 
 [tool.poetry.group.dev.dependencies]
